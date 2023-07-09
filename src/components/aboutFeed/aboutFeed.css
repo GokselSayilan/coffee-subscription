@@ -1,0 +1,400 @@
+.aboutBanner {
+    width: 100%;
+    position: relative;
+    max-height: 500px;
+
+}
+
+.aboutBannerImg {
+    width: 100%;
+    max-height: 500px;
+    border-radius: 8px;
+
+}
+
+.aboutContent {
+    position: absolute;
+    top: 0;
+    left: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    text-align: left;
+}
+
+.aboutTitle {
+    color: white;
+    font-size: 60px;
+    margin-bottom: 30px;
+
+}
+
+.aboutDesc {
+    width: 40%;
+    color: #FEFCF7;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.ourCommitment {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 150px;
+}
+
+.ourCommitmentLeft {
+    flex-basis: 30%;
+}
+
+.ourCommitmentLeftImg {
+    border-radius: 8px;
+}
+
+.ourCommitmentRight {
+    flex-basis: 40%;
+
+}
+
+.ourCommitmentRightContentTitle {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.ourCommitmentRightContentDesc {
+    color: #333D4B;
+    font-weight: 300;
+}
+
+.unCompromisingQuality {
+    margin-top: 300px;
+    position: relative;
+    height: 450px;
+    width: 100%;
+    gap: 100px;
+
+}
+
+.unCompromisingQualityBg {
+    width: 100%;
+    height: 450px;
+}
+
+.unCompromisingQualityBox {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    top: 0;
+}
+
+.unCompromisingQualityLeft {
+    flex-basis: 40%;
+}
+
+.unCompromisingQualityLeftContent {
+    margin-top: 60px;
+}
+
+.unCompromisingQualityLeftContentTitle {
+    color: white;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.unCompromisingQualityLeftContentDesc {
+    color: white;
+    font-weight: 300;
+}
+
+.unCompromisingQualityRight {
+    flex-basis: 30%;
+}
+
+.unCompromisingQualityRightImg {
+    width: 445px;
+    height: 474px;
+    position: relative;
+    top: -100px;
+    border-radius: 8px;
+}
+
+.ourHeadQuarters {
+    margin-top: 200px;
+    padding-left: 100px ;
+    margin-bottom: 200px;
+}
+
+
+.ourHeadQuartersTitle {
+    color: #83888F;
+    margin-bottom: 80px;
+    font-size: 24px;
+}
+
+.countryCards {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    gap: 50px;
+}
+
+.countryCard {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.countryCardImg {
+    width: 40px;
+    margin-bottom: 50px;
+}
+
+.countryCardTitle {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.countryCardInfo {
+    font-weight: 300;
+}
+
+
+@media (min-width: 1600px) {
+    
+    .aboutBanner {
+        max-height: 800px;
+    
+    }
+    
+    .aboutBannerImg {
+        max-height: 800px;
+    
+    }
+    
+
+    .aboutTitle {
+        font-size: 70px;
+    
+    }
+    
+    .aboutDesc {
+        width: 40%;
+        font-size: 20px;
+    }
+    
+
+}
+
+.aboutBannerImgMobile {
+    display: none;
+}
+
+.ourCommitmentLeftImgMobile {
+    display: none;
+}
+
+.unCompromisingQualityRightImgMobile {
+    display: none;
+}
+
+@media (max-width:500px) {
+
+    .aboutBanner {
+        max-height: unset;
+        height: 400px;
+    
+    }
+    .aboutContent {
+        left: unset;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .aboutTitle {
+        color: white;
+        font-size: 36px;
+        margin-bottom: 30px;
+    
+    }
+    
+    .aboutDesc {
+        width: 80%;
+        font-size: 15px;
+    }
+
+    .aboutBannerImg {
+        display: none;
+    }
+
+    .aboutBannerImgMobile {
+        display: block;
+        width: 100%;
+        height: 400px;
+        border-radius: 15px;
+    }
+
+
+    /* our commitment */
+
+    .ourCommitment {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        margin-top: 120px;
+
+    }
+    
+    .ourCommitmentLeft {
+        flex-basis: unset;
+    }
+
+    .ourCommitmentLeftImg {
+        display: none;
+    }
+
+    .ourCommitmentLeftImgMobile {
+        display: block;
+        border-radius: 15px;
+        height: 400px;
+        width: 100%;
+    }
+    
+    .ourCommitmentRight {
+        flex-basis: unset;
+    
+    }
+    
+    .ourCommitmentRightContentTitle {
+        font-size: 30px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    
+    .ourCommitmentRightContentDesc {
+        text-align: center;
+        color: #333D4B;
+        font-weight: 300;
+    }
+    
+
+    /* uncompromising */
+
+    .unCompromisingQuality {
+        margin-top: 150px;
+        height: 600px;
+        width: 100%;
+    
+    }
+    
+    .unCompromisingQualityBg {
+        width: 100%;
+        height: 600px;
+        border-radius: 15px;
+    }
+    
+    .unCompromisingQualityBox {
+        display: flex;
+        flex-direction: column;
+        top: 80px;
+    }
+    
+    .unCompromisingQualityLeft {
+        flex-basis: unset;
+    }
+    
+    .unCompromisingQualityLeftContent {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 60px;
+    }
+    
+    .unCompromisingQualityLeftContentTitle {
+        width: 80%;
+        color: white;
+        font-size: 30px;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    
+    .unCompromisingQualityLeftContentDesc {
+        color: white;
+        font-weight: 300;
+        width: 80%;
+    }
+    
+    .unCompromisingQualityRight {
+        display: flex;
+        justify-content: center;
+        flex-basis: unset;
+    }
+    
+    .unCompromisingQualityRightImg {
+       display: none;
+    }
+
+    .unCompromisingQualityRightImgMobile {
+        display: block;
+        position: absolute;
+        width: 280px;
+        height: 160px;
+        z-index: 7;
+        top: -150px;
+        border-radius: 15px;
+    }
+
+    /* our headquarters */
+
+    .ourHeadQuarters {
+        margin-top: 120px;
+        padding-left: unset ;
+        margin-bottom: 120px;
+        text-align: center;
+    }
+    
+    
+    .ourHeadQuartersTitle {
+        color: #83888F;
+        margin-bottom: 80px;
+        font-size: 28px;
+    }
+    
+    .countryCards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 80px;
+    }
+    
+    .countryCard {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    
+    .countryCardImg {
+        width: 40px;
+        margin-bottom: 50px;
+        
+    }
+    
+    .countryCardTitle {
+        font-size: 25px;
+        margin-bottom: 15px;
+    }
+    
+    .countryCardInfo {
+        font-weight: 300;
+    }
+    
+}

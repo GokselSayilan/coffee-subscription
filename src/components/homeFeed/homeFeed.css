@@ -1,0 +1,515 @@
+.HomeFeed {}
+
+.homeBanner {
+    position: relative;
+    max-height: 500px;
+}
+
+.homeBannerImg {
+    width: 100%;
+    border-radius: 8px;
+    max-height: 500px;
+
+    object-fit: cover;
+}
+
+.bannerTextWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 0px;
+    left: 50px;
+    height: 100%;
+}
+
+.homeBannerTitle {
+    width: 50%;
+    font-size: 60px;
+    color: white;
+}
+
+.homeBannerDesc {
+    top: 230px;
+    left: 50px;
+    width: 35%;
+    line-height: 20px;
+    color: rgb(138, 138, 138);
+    font-size: 14px;
+}
+
+.homeBannerButton {
+    top: 330px;
+    left: 50px;
+    height: 40px;
+    width: 150px;
+    background-color: #0e8684;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.homeBannerButton:hover {
+    transition: 0.5s;
+    background-color: #66D2CF;
+}
+
+.ourCollection {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.ourCollectionBg {
+    background-image: linear-gradient(to bottom, #c2c2c2, #ffffff);
+    background-clip: text;
+    color: transparent;
+    font-size: 130px;
+    align-self: center;
+}
+
+.collections {
+    display: flex;
+    gap: 50px;
+    position: relative;
+    top: -40px;
+    justify-content: center;
+}
+
+
+.collection {
+    text-align: center;
+    flex-basis: 20%;
+}
+
+.collectionImg {
+    width: 200px;
+}
+
+.collectionTitle {
+    margin-top: 50px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+.collectionDesc {
+    font-weight: 300;
+    line-height: 25px;
+}
+
+.whyChooseUs {
+    margin-top: 150px;
+    position: relative;
+    height: 500px;
+    width: 100%;
+}
+
+.whyChooseUsBg {
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.whyChooseUsTop {
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.whyChooseUsTopTitle {
+    align-self: center;
+    width: 50%;
+    margin-bottom: 30px;
+    font-size: 40px;
+    color: white;
+}
+
+.whyChooseUsTopDesc {
+    align-self: center;
+    width: 50%;
+    color: #c2c2c2;
+}
+
+.whyChooseUsBottom {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    gap: 50px;
+}
+
+.whyChooseUsBottomCard {
+    height: 300px;
+    width: 300px;
+    background-color: #0e8684;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    top: -160px;
+
+}
+
+.whyChooseUsBottomCardImg {
+    width: 60px;
+}
+
+#truck {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.whyChooseUsBottomCardTitle {
+    color: white;
+    font-weight: 700;
+}
+
+.whyChooseUsBottomCardDesc {
+    width: 80%;
+    text-align: center;
+    color: rgb(247, 247, 247);
+    line-height: 25px;
+    font-weight: 300;
+}
+
+.howItWorks {
+    margin-top: 300px;
+    margin-left: 100px;
+    margin-bottom: 200px;
+}
+
+.howItWorksTitle {
+    color: #a9a9a9;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.howItWorksSeparator {
+    width: 70%;
+    height: 2px;
+    background-color: #fad6b5;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.howItWorksSeparatorCircles {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.howItWorksSeparatorCircle {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: white;
+    border: 2px solid #0e8684;
+    position: relative;
+    bottom: -10px;
+}
+
+.howItWorksCards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px;
+    width: 80%;
+}
+
+.howItWorksCard {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.howItWorksCardNumber {
+    font-size: 70px;
+    margin-bottom: 40px;
+    color: #ffdbb5;
+}
+
+.howItWorksCardTitle {
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.howItWorksCardDesc {
+    line-height: 25px;
+    font-weight: 300;
+    margin-bottom: 70px;
+}
+
+.howItWorksButton {
+    height: 50px;
+    width: 180px;
+    background-color: #0e8684;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.howItWorksButton:hover {
+    transition: 0.5s;
+    background-color: #66D2CF;
+}
+
+.buttonLink {
+    text-decoration: none;
+    color: white;
+}
+
+@media (min-width: 1600px) {
+
+    .homeBanner {
+        max-height: 800px;
+    }
+
+    .homeBannerImg {
+        max-height: 800px;
+    }
+
+
+
+    .homeBannerTitle {
+        width: 45%;
+        font-size: 80px;
+    }
+
+    .homeBannerDesc {
+        width: 50%;
+        line-height: 30px;
+        font-size: 20px;
+    }
+
+    .homeBannerButton {
+        height: 60px;
+        width: 250px;
+        font-size: 20px;
+        background-color: #0e8684;
+    }
+}
+
+@media (min-width: 1900px) {
+
+
+    .homeBannerTitle {
+        width: 50%;
+        font-size: 95px;
+    }
+
+    .homeBannerDesc {
+        width: 50%;
+        line-height: 30px;
+        font-size: 22px;
+    }
+
+
+}
+
+.homeBannerImgRes {
+    display: none;
+}
+
+@media (max-width:500px) {
+
+    /* banner */
+
+    .homeBannerImg {
+        display: none;
+    }
+
+    .homeBannerImgRes {
+        display: block;
+        width: 100%;
+        height: 500px;
+        border-radius: 10px;
+        object-fit: cover;
+
+    }
+
+    .homeBanner {
+        height: 500px;
+        width: 100%;
+    }
+
+
+    .bannerTextWrapper {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        top: 0px;
+        left: unset;
+        width: 100%;
+        padding: 0 40px;
+        box-sizing: border-box;
+    }
+
+    .homeBannerTitle {
+        width: 100%;
+        font-size: 32px;
+        color: white;
+        margin-bottom: 20px;
+    }
+
+    .homeBannerDesc {
+        top: unset;
+        left: unset;
+        width: 100%;
+        line-height: 20px;
+        color: rgb(138, 138, 138);
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+
+    .homeBannerButton {
+        top: unset;
+        left: unset;
+        height: 40px;
+        width: 150px;
+        background-color: #0e8684;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    .homeBannerButton:hover {
+        transition: 0.5s;
+        background-color: #66D2CF;
+    }
+
+    /* our collection */
+
+
+    .ourCollection {
+        margin-top: 120px;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .ourCollectionBg {
+        font-size: 40px;
+    }
+
+    .collections {
+        margin-top: 30px;
+        flex-direction: column;
+        position: unset;
+        top: unset;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .collection {
+        flex-basis: unset;
+        width: 80%;
+    }
+
+    .collectionTitle {
+        font-size: 26px;
+    }
+
+
+
+
+    /* why choose us? */
+
+    .whyChooseUs {
+        margin-top: 120px;
+        height: 900px;
+    }
+
+    .whyChooseUsBg {
+        height: 900px;
+    }
+
+    .whyChooseUsTop {
+        padding: 0 30px;
+        box-sizing: border-box;
+    }
+
+    .whyChooseUsTopTitle {
+        text-align: center;
+        width: 100%;
+        font-size: 30px;
+    }
+
+    .whyChooseUsTopDesc {
+        text-align: center;
+        width: 100%;
+        color: #c2c2c2;
+    }
+
+    .whyChooseUsBottom {
+        flex-direction: column;
+        position: absolute;
+        top: 400px;
+    }
+
+    .whyChooseUsBottomCard {
+        position: unset;
+        border-radius: 10px;
+
+    }
+
+    /* How it works */
+
+
+    .howItWorks {
+        margin-top: 600px;
+        margin-left: unset;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+
+    .howItWorksTitle {
+        color: #a9a9a9;
+        font-size: 30px;
+        margin-bottom: 50px;
+    }
+
+    .howItWorksSeparator {
+        display: none;
+    }
+
+
+    .howItWorksCards {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+        gap: 0px;
+        width: 100%;
+    }
+
+    .howItWorksCard {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .howItWorksCardDesc {
+        width: 80%;
+    }
+
+}

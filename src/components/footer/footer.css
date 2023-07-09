@@ -1,0 +1,151 @@
+.footer {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;    
+}
+
+.footerBg {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.footerLeft {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 70%;
+
+}
+
+.footerLogo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footerLogoImg {
+    cursor: pointer;
+
+}
+
+.footerLinks {
+    text-align: right;;
+}
+
+.footerLink {
+    margin-left: 40px;
+    color: rgb(167, 167, 167);
+    cursor: pointer;
+}
+
+.footerLink:hover {
+    color: white;
+}
+
+.footerRight {
+    position: absolute;
+    right: 0;
+    margin-right: 75px;
+    width: 30%;
+    text-align: right;
+}
+
+.footerSocialMediaItem {
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.linkElementFooter {
+    text-decoration: none;
+    color: rgb(152, 152, 152);
+
+}
+
+.linkElementFooter:hover {
+    color: rgb(255, 255, 255);
+}
+
+@media (min-width:1600px) {
+    .footerLeft {
+        width: 50%;
+    }
+}
+
+@media (min-width:2000px) {
+    .footerLeft {
+        width: 40%;
+    }
+}
+
+@media (max-width:500px) {
+
+
+    .footer {
+        justify-content: unset;
+        height: 350px;    
+        width: 100%;
+
+    }
+    
+    .footerBg {
+        height: 350px;    
+        width: 100%;
+        position: absolute;
+    }
+    
+    .footerLeft {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 50px;
+        width: 100%;
+    
+    }
+    
+    .footerLogo {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: unset;
+        gap: 30px;
+    }
+
+    
+    .footerLinks {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    
+    .footerLink {
+        margin-left: unset;
+        color: rgb(167, 167, 167);
+        cursor: pointer;
+    }
+
+    
+    .footerRight {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        bottom: 50px;
+        right: unset;
+        margin-right: unset;
+        width: 100%;
+        text-align: center;
+        gap: 20px;
+    }
+    
+
+    .footerSocialMediaItem {
+        margin-left: unset;
+    }
+
+
+}

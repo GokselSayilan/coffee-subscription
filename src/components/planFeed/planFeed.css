@@ -1,0 +1,833 @@
+.planFeedBanner {
+    position: relative;
+    height: 450px;
+    width: 100%;
+}
+
+.planFeedBannerImg {
+    position: absolute;
+    height: 450px;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.planFeedContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 40%;
+    position: absolute;
+    top: 0;
+    left: 60px;
+}
+
+.planFeedContentTitle {
+    color: white;
+    font-size: 70px;
+    margin-bottom: 30px;
+}
+
+.planFeedContentDesc {
+    color: rgb(189, 189, 189);
+    font-weight: 300;
+}
+
+.howItWorksPlan {
+    margin-top: 170px;
+    margin-bottom: 150px;
+    width: 100%;
+    height: 650px;
+    position: relative;
+
+}
+
+.howItWorksImgPlan {
+    width: 100%;
+    height: 650px;
+    position: absolute;
+}
+
+.howItWorksWrapperPlan {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+
+}
+
+.howItWorksSeparatorPlan {
+    width: 60%;
+    height: 2px;
+    background-color: #fad6b5;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.howItWorksSeparatorCirclesPlan {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.howItWorksSeparatorCirclePlan {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: white;
+    border: 2px solid #fad6b5;
+    position: relative;
+    bottom: -10px;
+}
+
+.howItWorksCardsPlan {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px;
+    width: 80%;
+}
+
+.howItWorksCardPlan {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.howItWorksCardNumberPlan {
+    font-size: 70px;
+    margin-bottom: 40px;
+    color: #ffdbb5;
+}
+
+.howItWorksCardTitlePlan {
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 40px;
+    width: 100%;
+    color: white;
+
+}
+
+.howItWorksCardDescPlan {
+    line-height: 25px;
+    font-weight: 300;
+    margin-bottom: 70px;
+    color: white;
+}
+
+
+.order {
+    display: flex;
+    margin-top: 150px;
+    gap: 100px;
+    padding: 0 100px;
+    align-items: baseline;
+}
+
+.orderLeft {
+    width: 300px;
+
+}
+
+.orderStage {
+    display: flex;
+    margin-bottom: 30px;
+    gap: 20px;
+    font-size: 20px;
+    color: #b0b0b0;
+    width: 250px
+}
+
+.orderStageHr {
+    width: 80%;
+    margin-bottom: 20px;
+    border: 0.5px solid #ebebeb;
+}
+
+
+.orderRight {
+    width: 730px;
+
+
+}
+
+.orderRightBoxs {
+    display: flex;
+    flex-direction: column;
+}
+
+.orderRightBoxTitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #83888F;
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+.orderRightMenuIcon {
+    cursor: pointer;
+}
+
+.reverseMenuIcon {
+    transform: rotate(180deg);
+    /* Resmi 180 derece döndürür */
+    transform-origin: center center;
+    /* Dönme merkezi */
+}
+
+.activeState {
+    color: black;
+    font-weight: 700;
+}
+
+.orderRightBoxCards {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    width: 730px;
+
+}
+
+.orderRightBoxCard {
+    background-color: #F4F1EB;
+    width: 150px;
+    height: 150px;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 75px;
+    cursor: pointer;
+}
+
+@media (min-width:500px) {
+
+    .orderRightBoxCard:hover {
+        background-color: #FDD6BA;
+        color: black;
+        transition: 0.5s;
+    }
+}
+
+
+.selectedCard {
+    background-color: #0E8784;
+    color: white;
+}
+
+.selectedCoffee {
+    font-family: 'Fraunces', serif;
+    color: #0E8784;
+    margin: 0 8px;
+    letter-spacing: -0.5px;
+}
+
+.passive {
+    text-decoration: line-through #ebebeb;
+    ;
+    color: #ebebeb;
+}
+
+#grindOption {
+    word-spacing: 10px;
+}
+
+.orderRightBoxCardTitle {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.orderRightBoxCardDesc {
+    font-weight: 300;
+}
+
+.orderSummary {
+    width: 730px;
+    position: relative;
+    height: 208px;
+}
+
+.orderSummaryImg {
+    width: 730px;
+    height: 208px;
+    position: absolute;
+    top: 0;
+}
+
+.orderSummaryContent {
+    position: absolute;
+    padding: 30px 60px;
+    height: 208px;
+    top: 0;
+}
+
+.orderSummaryTitle {
+    color: #b0b0b0;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.orderSummaryDesc {
+    color: white;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.buttonWrapper {
+    display: flex;
+    width: 730px;
+    justify-content: right;
+    margin-top: 50px;
+    margin-bottom: 200px;
+}
+
+.orderButton {
+    height: 50px;
+    width: 200px;
+    background-color: #0e8684;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Fraunces', serif;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.orderButton:hover {
+    transition: 0.5s;
+    background-color: #66D2CF;
+}
+
+.orderOpen {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0, 0.5);
+
+
+}
+
+.orderOpenBox {
+    background-color: white;
+    width: 540px;
+    height: 600px;
+    border-radius: 10px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.orderOpenBoxTop {
+    background-color: #333D4B;
+    width: 100%;
+    height: 136px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    border-radius: 8px 8px 0 0;
+    position: relative;
+
+}
+
+.orderOpenBoxTopTitle {
+    color: white;
+    font-size: 45px;
+    margin-left: 40px;
+}
+
+#orderOpenBoxTopIcon {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    color: white;
+    scale: 1.5;
+    cursor: pointer;
+}
+
+.orderOpenBoxMidle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+}
+
+#orderSummaryDescBottom {
+    color: #83888F;
+    margin-bottom: 30px;
+    width: 80%;
+}
+
+.orderOpenBoxMidleDesc {
+    font-weight: 300;
+    width: 80%;
+}
+
+.orderCompletedTitle {
+    color: #0e8684;
+    font-size: 60px;
+
+}
+
+.orderOpenBoxBottom {
+    display: flex;
+    justify-content: center;
+}
+
+.orderOpenBoxBottomWrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.orderOpenBoxBottomPrice {
+    font-size: 36px;
+}
+
+.orderOpenBoxBottomButton {
+    height: 50px;
+    width: 200px;
+    background-color: #0e8684;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Fraunces', serif;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+.orderOpenBoxBottomButton:hover {
+    transition: 0.5s;
+    background-color: #66D2CF;
+}
+
+
+@media (min-width: 1600px) {
+    .planFeedBanner {
+        height: 700px;
+    }
+
+    .planFeedBannerImg {
+        height: 700px;
+    }
+
+
+
+    .planFeedContentTitle {
+        font-size: 90px;
+    }
+
+    .planFeedContentDesc {
+        font-size: 24px;
+    }
+}
+
+
+.planFeedBannerImgMobile {
+    display: none;
+}
+
+@media (max-width: 500px) {
+
+    .planFeedBanner {
+        position: relative;
+        height: 400px;
+        width: 100%;
+    }
+
+    .planFeedBannerImg {
+        display: none;
+    }
+
+
+    .planFeedBannerImgMobile {
+        display: block;
+        position: absolute;
+        height: 400px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 15px;
+    }
+
+
+    .planFeedContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: unset;
+    }
+
+    .planFeedContentTitle {
+        color: white;
+        font-size: 30px;
+        margin-bottom: 30px;
+        text-align: center;
+
+    }
+
+    .planFeedContentDesc {
+        color: rgb(189, 189, 189);
+        font-weight: 300;
+        width: 80%;
+        text-align: center;
+    }
+
+    /* pick your coffee */
+
+
+    .howItWorksPlan {
+        margin-top: 120px;
+        margin-bottom: 120px;
+        width: 100%;
+        height: 1050px;
+        position: relative;
+
+    }
+
+    .howItWorksImgPlan {
+        width: 100%;
+        height: 1050px;
+        position: absolute;
+    }
+
+    .howItWorksWrapperPlan {
+        position: absolute;
+        top: 50px;
+        left: unset;
+
+    }
+
+    .howItWorksSeparatorPlan {
+        display: none;
+    }
+
+
+    .howItWorksCardsPlan {
+        display: flex;
+        grid-template-columns: unset;
+        flex-direction: column;
+
+        gap: 0;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .howItWorksCardPlan {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 80%;
+    }
+
+    .howItWorksCardNumberPlan {
+        font-size: 60px;
+        margin-bottom: 20px;
+        color: #ffdbb5;
+    }
+
+    .howItWorksCardTitlePlan {
+        font-weight: 700;
+        font-size: 24px;
+        margin-bottom: 20px;
+        width: 100%;
+        color: white;
+
+    }
+
+    .howItWorksCardDescPlan {
+        line-height: 25px;
+        font-weight: 300;
+        margin-bottom: 40px;
+        color: white;
+    }
+
+    /* stages */
+
+
+    .order {
+        display: flex;
+        margin-top: 120px;
+        gap: unset;
+        padding: unset;
+        align-items: unset;
+    }
+
+    .orderLeft {
+        display: none;
+
+    }
+
+
+    .orderRight {
+        width: 100%;
+
+
+    }
+
+
+    .orderRightBoxTitle {
+        font-size: 24px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .orderRightMenuIcon {
+        margin-left: 80px;
+    }
+
+
+    .orderRightBoxCards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+
+    }
+
+    .orderRightBoxCard {
+        width: 100%;
+        height: 150px;
+        padding: 30px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+    }
+
+
+    .selectedCard {
+        background-color: #0E8784;
+        color: white;
+    }
+
+    .selectedCoffee {
+        font-family: 'Fraunces', serif;
+        color: #0E8784;
+        margin: 0 8px;
+        letter-spacing: -0.5px;
+    }
+
+    .passive {
+        text-decoration: line-through #ebebeb;
+        ;
+        color: #ebebeb;
+    }
+
+    #grindOption {
+        word-spacing: 10px;
+    }
+
+    .orderRightBoxCardTitle {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .orderRightBoxCardDesc {
+        font-weight: 300;
+    }
+
+    /* order summary  */
+
+    .orderSummary {
+        margin-top: 60px;
+        width: 300px;
+        position: relative;
+        height: 300px;
+    }
+    
+    .orderSummaryImg {
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        top: 0;
+    }
+    
+    .orderSummaryContent {
+        position: absolute;
+        padding: 30px ;
+        box-sizing: border-box;
+        height: 300px;
+        top: 0;
+    }
+    
+    .orderSummaryTitle {
+        color: #b0b0b0;
+        font-weight: 300;
+        margin-bottom: 20px;
+    }
+    
+    .orderSummaryDesc {
+        color: white;
+        font-weight: 700;
+        font-size: 20px;
+        text-align: left;
+    }
+
+    .selectedCoffee {
+        margin: unset;
+        letter-spacing: 0;
+    }
+    
+    .buttonWrapper {
+        display: flex;
+        width: 300px;
+        justify-content: center;
+        margin-top: 50px;
+        margin-bottom: 120px;
+    }
+
+
+    
+    .orderButton {
+        height: 50px;
+        width: 200px;
+        background-color: #0e8684;
+        color: white;
+        font-size: 18px;
+        font-weight: 700;
+        font-family: 'Fraunces', serif;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+    
+    .orderButton:hover {
+        transition: 0.5s;
+        background-color: #66D2CF;
+    }
+    
+    /* order open */
+
+    .orderOpen {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgb(0, 0, 0, 0.5);
+    
+    
+    }
+    
+    .orderOpenBox {
+        background-color: white;
+        width: 330px;
+        height: 600px;
+        border-radius: 15px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+    }
+    
+    .orderOpenBoxTop {
+        background-color: #333D4B;
+        width: 100%;
+        height: 88px;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        border-radius: 15px 15px 0 0;
+        position: relative;
+    
+    }
+    
+    .orderOpenBoxTopTitle {
+        color: white;
+        font-size: 25px;
+        margin-left: 40px;
+    }
+    
+    #orderOpenBoxTopIcon {
+        position: absolute;
+        right: 30px;
+        top: 30px;
+        color: white;
+        scale: 1.5;
+        cursor: pointer;
+    }
+    
+    .orderOpenBoxMidle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 350px;
+    }
+    
+    #orderSummaryDescBottom {
+        color: #83888F;
+        margin-bottom: 30px;
+        width: 80%;
+    }
+    
+    .orderOpenBoxMidleDesc {
+        font-weight: 300;
+        width: 80%;
+    }
+    
+    .orderCompletedTitle {
+        color: #0e8684;
+        font-size: 50px;
+    
+    }
+    
+    .orderOpenBoxBottom {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .orderOpenBoxBottomWrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        width: 80%;
+    }
+    
+    .orderOpenBoxBottomPrice {
+        font-size: 24px;
+    }
+    
+    .orderOpenBoxBottomButton {
+        height: 50px;
+        width: 200px;
+        background-color: #0e8684;
+        color: white;
+        font-size: 16px;
+        font-weight: 700;
+        font-family: 'Fraunces', serif;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    
+    }
+
+}

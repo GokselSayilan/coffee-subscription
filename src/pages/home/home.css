@@ -1,0 +1,12 @@
+.appWrapper {
+    background-color: #FEFCF7;
+    padding: 0 50px 50px 50px;
+    position: relative;
+
+}
+
+@media (max-width:500px) {
+    .appWrapper {
+    padding: 0 30px 30px 30px;
+    }
+}

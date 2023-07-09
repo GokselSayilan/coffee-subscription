@@ -1,0 +1,123 @@
+.navbar {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    position: sticky;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbarLogo {
+}
+
+.navbarLogoImg {
+    cursor: pointer;
+}
+
+.navbarRightLists {
+    display: flex;
+    list-style: none;
+}
+
+.navbarRightList {
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.linkElementNavbar {
+    text-decoration: none;
+    color: rgb(152, 152, 152);
+
+}
+
+
+.linkElementNavbar:hover {
+    color: rgb(65, 65, 65);
+}
+
+.hamburgerMenu {
+    display: none;
+}
+
+.none {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
+@media (max-width:500px) {
+
+    .navbar {
+        height: 80px;
+        width: 100%;
+        display: flex;
+        position: unset;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbarLogoImg {
+        width: 160px;
+    }
+
+    
+    .hamburgerMenu {
+        display: block;
+    }
+    
+    .mobileMenu{
+        position: absolute;
+        top: 80px;
+        background-color: rgb(255, 255, 255,0.9);
+        width: 100%;
+        height: 100%;
+        left: 0;
+        z-index: 5;
+    
+    }
+
+    .mobileMenuLists {
+        position: fixed;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        list-style: none;
+
+    }
+
+    .mobilMenuList {
+        text-decoration: none;
+        color: #333D4B;
+        margin-top: 40px;
+        font-size: 24px;
+        font-weight: 700;
+        font-family: 'Fraunces', serif;
+        text-align: center;
+
+
+    }
+
+    
+    .navbarRightLists {
+        display: none;
+    }
+    
+    .linkElementNavbar {
+        text-decoration: none;
+        color: rgb(152, 152, 152);
+    
+    }
+    
+    
+    .linkElementNavbar:hover {
+        color: rgb(65, 65, 65);
+    }
+
+    .visible {
+        display: block;
+    }
+
+
+}
