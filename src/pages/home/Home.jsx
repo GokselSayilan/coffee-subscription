@@ -1,6 +1,4 @@
 import React from "react";
-import Navbar from "../../components/navbar/Navbar";
-import Footer from "../../components/footer/Footer";
 import HomeFeed from "../../components/homeFeed/HomeFeed";
 
 import "./home.css";

@@ -54,7 +54,7 @@ function PlanFeed() {
       setMenu5Open(true);
       setActiveStage("deliveries");
     }
-  }, [stage3Selected]);
+  }, [stage3Selected,stage1Selected]);
 
   useEffect(() => {
     if (stage4Selected !== "______") {
