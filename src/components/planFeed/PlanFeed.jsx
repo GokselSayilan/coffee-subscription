@@ -1,4 +1,4 @@
-import React, { useEffect, useState ,useRef} from "react";
+import React, { useEffect, useState, useRef } from "react";
 import "./planFeed.css";
 import CloseIcon from "@mui/icons-material/Close";
 import ClipLoader from "react-spinners/ClipLoader";
@@ -27,22 +27,24 @@ function PlanFeed() {
   const [orderCompleted, setOrderCompleted] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
 
-  const ref0 = useRef(null)
-  const ref1 = useRef(null)
-  const ref2 = useRef(null)
-  const ref3 = useRef(null)
+  const ref0 = useRef(null);
+  const ref1 = useRef(null);
+  const ref2 = useRef(null);
+  const ref3 = useRef(null);
+  const ref4 = useRef(null);
 
-  const card1 = ref0.current
-  const card2 = ref1.current
-  const card3 = ref2.current
-  const card4 = ref3.current
+  const card1 = ref0.current;
+  const card2 = ref1.current;
+  const card3 = ref2.current;
+  const card4 = ref3.current;
+  const button = ref4.current;
 
-  const cardArray = [card1,card2,card3,card4]
+  const cardArray = [card1, card2, card3, card4];
 
   useEffect(() => {
     if (stage1Selected !== "______") {
       setMenu2Open(true);
-      handleScroll(0)
+      handleScroll(0);
       setActiveStage("bean type");
     }
 
@@ -54,7 +56,7 @@ function PlanFeed() {
   useEffect(() => {
     if (stage2Selected !== "______") {
       setMenu3Open(true);
-      handleScroll(1)
+      handleScroll(1);
       setActiveStage("quantity");
     }
   }, [stage2Selected]);
@@ -62,12 +64,12 @@ function PlanFeed() {
   useEffect(() => {
     if (stage3Selected !== "______" && stage1Selected !== "Capsule") {
       setMenu4Open(true);
-      handleScroll(2)
+      handleScroll(2);
       setActiveStage("grind option");
     }
     if (stage1Selected === "Capsule") {
       setMenu5Open(true);
-      handleScroll(3)
+      handleScroll(3);
       setActiveStage("deliveries");
     }
   }, [stage3Selected]);
@@ -75,7 +77,7 @@ function PlanFeed() {
   useEffect(() => {
     if (stage4Selected !== "______") {
       setMenu5Open(true);
-      handleScroll(3)
+      handleScroll(3);
       setActiveStage("deliveries");
     }
   }, [stage4Selected]);
@@ -110,6 +112,10 @@ function PlanFeed() {
     }
   }, [stage3Selected, stage5Selected, price1, price2, price3]);
 
+  useEffect(() => {
+    if (stage5Selected !== "______") button.scrollIntoView({ behavior: "smooth" });
+  }, [stage5Selected]);
+
   const handleOrderOpen = (e) => {
     if (
       e.target.id === "orderOpenBoxTopIcon" ||
@@ -133,9 +139,8 @@ function PlanFeed() {
   };
 
   const handleScroll = (index) => {
-    
-    cardArray[index].scrollIntoView({behavior:"smooth"})
-  }
+    cardArray[index].scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <div className="planFeed">
@@ -625,15 +630,13 @@ function PlanFeed() {
           <div className="buttonWrapper">
             <button
               className="orderButton"
+              ref={ref4}
               onClick={() => {
-                if(stage5Selected!== "______"){
-                  setIsOrderOpen(true)
-                  window.scrollTo(0, 0) 
+                if (stage5Selected !== "______") {
+                  setIsOrderOpen(true);
+                  window.scrollTo(0, 0);
                 }
-
-              }
-               
-              }
+              }}
             >
               Create my plan!
             </button>
