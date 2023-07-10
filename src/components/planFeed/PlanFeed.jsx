@@ -37,7 +37,7 @@ function PlanFeed() {
   const card2 = ref1.current;
   const card3 = ref2.current;
   const card4 = ref3.current;
-  const button = ref4.current;
+  const orderSummary = ref4.current;
 
   const cardArray = [card1, card2, card3, card4];
 
@@ -113,7 +113,7 @@ function PlanFeed() {
   }, [stage3Selected, stage5Selected, price1, price2, price3]);
 
   useEffect(() => {
-    if (stage5Selected !== "______") button.scrollIntoView({ behavior: "smooth" });
+    if (stage5Selected !== "______") orderSummary.scrollIntoView({ behavior: "smooth" });
   }, [stage5Selected]);
 
   const handleOrderOpen = (e) => {
@@ -595,7 +595,7 @@ function PlanFeed() {
                     }
                     onClick={() => setStage5Selected("Every Month")}
                   >
-                    <h4 className="orderRightBoxCardTitle">Every month</h4>
+                    <h4 className="orderRightBoxCardTitle" ref={ref4}>Every month</h4>
                     <span className="orderRightBoxCardDesc">
                       ${price3} per shipment. Includes free priority shipping.
                     </span>
@@ -630,7 +630,7 @@ function PlanFeed() {
           <div className="buttonWrapper">
             <button
               className="orderButton"
-              ref={ref4}
+       
               onClick={() => {
                 if (stage5Selected !== "______") {
                   setIsOrderOpen(true);
