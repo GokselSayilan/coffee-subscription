@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState ,useRef} from "react";
 import "./planFeed.css";
 import CloseIcon from "@mui/icons-material/Close";
 import ClipLoader from "react-spinners/ClipLoader";
@@ -27,9 +27,22 @@ function PlanFeed() {
   const [orderCompleted, setOrderCompleted] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
 
+  const ref0 = useRef(null)
+  const ref1 = useRef(null)
+  const ref2 = useRef(null)
+  const ref3 = useRef(null)
+
+  const card1 = ref0.current
+  const card2 = ref1.current
+  const card3 = ref2.current
+  const card4 = ref3.current
+
+  const cardArray = [card1,card2,card3,card4]
+
   useEffect(() => {
     if (stage1Selected !== "______") {
       setMenu2Open(true);
+      handleScroll(0)
       setActiveStage("bean type");
     }
 
@@ -41,6 +54,7 @@ function PlanFeed() {
   useEffect(() => {
     if (stage2Selected !== "______") {
       setMenu3Open(true);
+      handleScroll(1)
       setActiveStage("quantity");
     }
   }, [stage2Selected]);
@@ -48,17 +62,20 @@ function PlanFeed() {
   useEffect(() => {
     if (stage3Selected !== "______" && stage1Selected !== "Capsule") {
       setMenu4Open(true);
+      handleScroll(2)
       setActiveStage("grind option");
     }
     if (stage1Selected === "Capsule") {
       setMenu5Open(true);
+      handleScroll(3)
       setActiveStage("deliveries");
     }
-  }, [stage3Selected,stage1Selected]);
+  }, [stage3Selected]);
 
   useEffect(() => {
     if (stage4Selected !== "______") {
       setMenu5Open(true);
+      handleScroll(3)
       setActiveStage("deliveries");
     }
   }, [stage4Selected]);
@@ -114,6 +131,11 @@ function PlanFeed() {
       }, 1500);
     }, 2000);
   };
+
+  const handleScroll = (index) => {
+    
+    cardArray[index].scrollIntoView({behavior:"smooth"})
+  }
 
   return (
     <div className="planFeed">
@@ -312,7 +334,7 @@ function PlanFeed() {
                 </div>
               )}
             </div>
-            <div className="orderRightBox">
+            <div className="orderRightBox" ref={ref0}>
               <h3 className="orderRightBoxTitle">
                 What type of coffee?
                 <img
@@ -376,7 +398,7 @@ function PlanFeed() {
                 </div>
               )}
             </div>
-            <div className="orderRightBox">
+            <div className="orderRightBox" ref={ref1}>
               <h3 className="orderRightBoxTitle">
                 How much would you like?
                 <img
@@ -440,7 +462,7 @@ function PlanFeed() {
                 </div>
               )}
             </div>
-            <div className="orderRightBox">
+            <div className="orderRightBox " ref={ref2}>
               <h4
                 className={
                   stage1Selected === "Capsule"
@@ -512,7 +534,7 @@ function PlanFeed() {
                 </div>
               )}
             </div>
-            <div className="orderRightBox">
+            <div className="orderRightBox" ref={ref3}>
               <h3 className="orderRightBoxTitle">
                 How often should we deliver?
                 <img
@@ -604,8 +626,11 @@ function PlanFeed() {
             <button
               className="orderButton"
               onClick={() => {
-                setIsOrderOpen(true)
-                window.scrollTo(0, 0) 
+                if(stage5Selected!== "______"){
+                  setIsOrderOpen(true)
+                  window.scrollTo(0, 0) 
+                }
+
               }
                
               }
